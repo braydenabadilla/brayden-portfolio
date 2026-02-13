@@ -1,0 +1,149 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Brayden Abadilla — Marketing Portfolio</title>
+  <meta name="description" content="Brayden Abadilla — Marketing student at CSULB. Social media, campaign strategy, and entrepreneurship.">
+  <style>
+    :root{
+      --accent:#f5c542;
+      --text:#222;
+      --muted:#555;
+      --card:#fff;
+      --bg:#f8f8f9;
+      --maxw:1000px;
+      font-family:Inter,Helvetica,Arial,sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);line-height:1.5}
+    .wrap{max-width:var(--maxw);margin:36px auto;padding:28px}
+    header{display:flex;gap:24px;align-items:center;justify-content:space-between}
+    .hero{display:flex;gap:28px;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:8px;background:#ddd;flex-shrink:0}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    .cta{margin-top:14px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;color:#111;background:var(--accent);font-weight:600;margin-right:8px}
+    main{display:grid;grid-template-columns:1fr 320px;gap:28px;margin-top:28px}
+    @media(max-width:900px){main{grid-template-columns:1fr}}
+    section.card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(20,20,30,0.04)}
+    .projects .item{border-left:4px solid var(--accent);padding:12px;margin-bottom:14px}
+    .meta{color:var(--muted);font-size:13px;margin-bottom:8px}
+    .skills li{margin-bottom:6px}
+    footer{margin-top:30px;color:var(--muted);font-size:13px;text-align:center}
+    .tools{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:#f1f1f3;padding:6px 8px;border-radius:999px;font-size:13px}
+    .download{display:block;margin-top:8px;color:var(--accent);text-decoration:none;font-weight:600}
+    .project-title{font-weight:700;margin:0 0 6px}
+    .small{font-size:13px;color:var(--muted)}
+    .contact a{color:var(--accent);text-decoration:none;font-weight:600}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="hero">
+        <div>
+          <h1>Brayden Abadilla</h1>
+          <p class="lead">Marketing student at CSULB — social media, campaign strategy, and creative analytics. <strong>$1,000 entrepreneurship pitch winner.</strong></p>
+          <div class="cta">
+            <a class="btn" href="#projects">View work</a>
+            <a class="btn" href="mailto:braydenjesiah2006@gmail.com">Email me</a>
+            <a class="download" href="/Brayden_Abadilla_Resume.pdf" download>Download resume (PDF)</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div>
+        <section class="card" id="projects">
+          <h2>Selected Projects</h2>
+
+          <div class="projects">
+            <article class="item">
+              <div class="meta small">Social Marketing Assistant — DirectMyLoan Inc. (Dec 2024 – Aug 2025)</div>
+              <h3 class="project-title">Lead generation + social content</h3>
+              <p><strong>Goal:</strong> Increase social engagement and capture qualified leads for loan products.</p>
+              <ul>
+                <li>Planned and published 3–5 weekly posts across Instagram & LinkedIn; implemented A/B copy tests.</li>
+                <li>Used Google Analytics and platform insights to iterate on content — improved engagement by <strong>32%</strong> (replace with your number).</li>
+                <li>Helped set up automation for lead capture that fed into HubSpot (or CRM) to qualify leads.</li>
+              </ul>
+              <div class="small tools">
+                <span class="chip">Google Analytics</span><span class="chip">Meta Business Suite</span><span class="chip">Canva</span>
+              </div>
+            </article>
+
+            <article class="item">
+              <div class="meta small">Barista & in-store marketing — Vivot Craft Cafe (Aug 2025 – Present)</div>
+              <h3 class="project-title">Customer-facing promotions & in-store campaigns</h3>
+              <p><strong>Highlights:</strong> Ran seasonal promo signage and upsell suggestions that helped raise average ticket size. Strong customer service contributed to repeat customers.</p>
+              <div class="small tools">
+                <span class="chip">Customer Service</span><span class="chip">In-store marketing</span>
+              </div>
+            </article>
+
+            <article class="item">
+              <div class="meta small">Campus outreach — CSULB AACF (Aug 2025 – Present)</div>
+              <h3 class="project-title">Event promotion & social outreach</h3>
+              <p>Created event graphics and social posts that increased event signups and on-campus engagement.</p>
+              <div class="small tools">
+                <span class="chip">Adobe</span><span class="chip">Social Management</span>
+              </div>
+            </article>
+
+          </div>
+        </section>
+
+        <section class="card" id="projects-more" style="margin-top:16px">
+          <h2>Project layout suggestions</h2>
+          <p class="small">For each project, add: <strong>Problem → Approach → Outcome</strong>. Include metrics and a visual (screenshot or short video). Link to live posts or GitHub when possible.</p>
+        </section>
+      </div>
+
+      <aside>
+        <section class="card">
+          <h3>About</h3>
+          <p class="small">Business Marketing student at California State University, Long Beach. Passionate about creative campaigns and data-driven strategy. Winner — Apostle Business Ideation Challenge ($1,000).</p>
+          <div style="margin-top:10px">
+            <strong>Contact</strong>
+            <div class="small contact" style="margin-top:6px">
+              <div>Email: <a href="mailto:braydenjesiah2006@gmail.com">braydenjesiah2006@gmail.com</a></div>
+              <div>Location: Garden Grove, CA</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <h3>Skills & Tools</h3>
+          <ul class="skills small">
+            <li>Google Analytics • Campaign Reporting</li>
+            <li>Meta Business Suite • Instagram growth</li>
+            <li>Canva • Adobe Photoshop</li>
+            <li>HubSpot / CRM / Automations</li>
+            <li>Microsoft Excel (pivot tables)</li>
+          </ul>
+        </section>
+
+        <section class="card" style="margin-top:16px">
+          <h3>Resume & Achievements</h3>
+          <div class="small">
+            <a href="/Brayden_Abadilla_Resume.pdf" class="download">Download resume (PDF)</a>
+            <ul style="margin-top:8px">
+              <li>1st Place — Apostle Business Ideation Challenge ($1,000)</li>
+              <li>Dean's List (Norco College)</li>
+            </ul>
+          </div>
+        </section>
+      </aside>
+    </main>
+
+    <footer>
+      <p>Built by Brayden • Want a copy of this template or help hosting? Email me.</p>
+    </footer>
+  </div>
+</body>
+</html>
