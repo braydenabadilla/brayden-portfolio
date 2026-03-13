@@ -6,6 +6,111 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Brayden Abadilla — Marketing Portfolio</title>
   <meta name="description" content="Brayden Abadilla — Marketing student at CSULB. Social media, campaign strategy, and entrepreneurship.">
+  /* ---- Pastel "in the clouds" creative-agency theme ---- */
+
+:root{
+  --accent:#7c5cff;        /* soft purple */
+  --accent2:#32c6c6;       /* mint */
+  --text:#1f2430;
+  --muted:#5b6170;
+  --card: rgba(255,255,255,0.72);
+  --bg1:#f7f3ff;
+  --bg2:#eefcff;
+  --bg3:#fff6ef;
+}
+
+/* dreamy gradient + cloud blobs */
+body{
+  color: var(--text);
+  background:
+    radial-gradient(700px 300px at 10% 12%, rgba(124,92,255,0.18), transparent 55%),
+    radial-gradient(700px 300px at 85% 18%, rgba(50,198,198,0.18), transparent 55%),
+    radial-gradient(800px 340px at 40% 0%, rgba(255,190,140,0.16), transparent 60%),
+    linear-gradient(180deg, var(--bg1), var(--bg2) 55%, var(--bg3));
+}
+
+/* subtle cloud layer */
+body::before{
+  content:"";
+  position: fixed;
+  inset: 0;
+  pointer-events:none;
+  opacity: 0.55;
+  background:
+    radial-gradient(160px 90px at 12% 22%, rgba(255,255,255,0.70), transparent 62%),
+    radial-gradient(220px 110px at 28% 18%, rgba(255,255,255,0.55), transparent 65%),
+    radial-gradient(240px 120px at 75% 16%, rgba(255,255,255,0.62), transparent 66%),
+    radial-gradient(180px 100px at 86% 26%, rgba(255,255,255,0.52), transparent 66%),
+    radial-gradient(260px 130px at 45% 30%, rgba(255,255,255,0.45), transparent 68%);
+  filter: blur(2px);
+  mix-blend-mode: soft-light;
+  z-index: 0;
+}
+
+.wrap{ position: relative; z-index: 1; }
+
+/* glassy cards */
+section.card{
+  background: var(--card);
+  border: 1px solid rgba(255,255,255,0.55);
+  box-shadow: 0 10px 30px rgba(20,20,30,0.08);
+  backdrop-filter: blur(10px);
+}
+
+/* nicer header */
+header{
+  padding: 18px 18px;
+  border-radius: 14px;
+}
+
+/* buttons look more agency */
+.btn{
+  background: linear-gradient(135deg, rgba(124,92,255,0.95), rgba(50,198,198,0.92));
+  color: white;
+  border: 1px solid rgba(255,255,255,0.25);
+  box-shadow: 0 10px 22px rgba(124,92,255,0.18);
+}
+.btn:hover{ transform: translateY(-1px); }
+.btn{ transition: transform 0.15s ease, box-shadow 0.2s ease; }
+
+/* links */
+.download, .contact a{
+  color: var(--accent);
+}
+
+/* project items more playful but clean */
+.projects .item{
+  border-left: 4px solid transparent;
+  border-image: linear-gradient(180deg, rgba(124,92,255,0.9), rgba(50,198,198,0.9)) 1;
+  background: rgba(255,255,255,0.50);
+  border-radius: 12px;
+}
+
+/* chips */
+.chip{
+  background: rgba(255,255,255,0.65);
+  border: 1px solid rgba(124,92,255,0.15);
+}
+
+/* gallery polish */
+.work-gallery{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+  margin:14px 0 6px;
+}
+.work-gallery img{
+  width:100%;
+  max-width: 290px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.6);
+  box-shadow: 0 12px 28px rgba(20,20,30,0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.work-gallery img:hover{
+  transform: translateY(-4px) rotate(-0.3deg);
+  box-shadow: 0 16px 34px rgba(20,20,30,0.16);
+}
   <style>
     :root{
       --accent:#f5c542;
