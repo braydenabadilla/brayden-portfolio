@@ -39,6 +39,24 @@
     .project-title{font-weight:700;margin:0 0 6px}
     .small{font-size:13px;color:var(--muted)}
     .contact a{color:var(--accent);text-decoration:none;font-weight:600}
+    .work-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 14px 0;
+}
+
+.work-gallery img {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.work-gallery img:hover {
+  transform: scale(1.03);
+}
   </style>
 </head>
 <body>
@@ -81,6 +99,11 @@
               <div class="meta small">Barista & in-store marketing — Vivot Craft Cafe (Aug 2025 – Present)</div>
               <h3 class="project-title">Customer-facing promotions & in-store campaigns</h3>
               <p><strong>Highlights:</strong> Photographing new seasonal items and creating promotional content using Adobe Photoshop to support upcoming marketing campaigns and social media engagement.</p>
+               <div class="work-gallery">
+    <img src="images/avotoastvivot2.png" alt="Avocado Toast Campaign">
+    <img src="images/eggsandovivot.png" alt="Egg Sando Campaign">
+    <img src="images/fruithojivivot.png" alt="Hojicha Latte Campaign">
+  </div>
               <div class="small tools">
                 <span class="chip">Customer Service</span><span class="chip">In-store marketing</span>
               </div>
