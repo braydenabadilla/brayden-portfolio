@@ -1,273 +1,214 @@
-
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Brayden Abadilla — Marketing Portfolio</title>
-  <meta name="description" content="Brayden Abadilla — Marketing student at CSULB. Social media, campaign strategy, and entrepreneurship.">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Brayden Abadilla — Marketing Portfolio</title>
 
-  <style>
-    :root{
-      --accent:#f5c542;
-      --text:#222;
-      --muted:#555;
-      --card:#fff;
-      --bg:#f8f8f9;
-      --maxw:1000px;
-      font-family:Inter,Helvetica,Arial,sans-serif;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:var(--text);line-height:1.5}
-    .wrap{max-width:var(--maxw);margin:36px auto;padding:28px}
-    header{display:flex;gap:24px;align-items:center;justify-content:space-between}
-    .hero{display:flex;gap:28px;align-items:center}
-    .avatar{width:96px;height:96px;border-radius:8px;background:#ddd;flex-shrink:0}
-    h1{margin:0;font-size:28px}
-    p.lead{margin:6px 0 0;color:var(--muted)}
-    .cta{margin-top:14px}
-    .btn{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;color:#111;background:var(--accent);font-weight:600;margin-right:8px}
-    main{display:grid;grid-template-columns:1fr 320px;gap:28px;margin-top:28px}
-    @media(max-width:900px){main{grid-template-columns:1fr}}
-    section.card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(20,20,30,0.04)}
-    .projects .item{border-left:4px solid var(--accent);padding:12px;margin-bottom:14px}
-    .meta{color:var(--muted);font-size:13px;margin-bottom:8px}
-    .skills li{margin-bottom:6px}
-    footer{margin-top:30px;color:var(--muted);font-size:13px;text-align:center}
-    .tools{display:flex;flex-wrap:wrap;gap:8px}
-    .chip{background:#f1f1f3;padding:6px 8px;border-radius:999px;font-size:13px}
-    .download{display:block;margin-top:8px;color:var(--accent);text-decoration:none;font-weight:600}
-    .project-title{font-weight:700;margin:0 0 6px}
-    .small{font-size:13px;color:var(--muted)}
-    .contact a{color:var(--accent);text-decoration:none;font-weight:600}
-    .work-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin: 14px 0;
-}
-
-.work-gallery img {
-  width: 100%;
-  max-width: 280px;
-  border-radius: 10px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease;
-}
-
-.work-gallery img:hover {
-  transform: scale(1.03);
-}
-          /* ---- Pastel "in the clouds" creative-agency theme ---- */
-
+<style>
 :root{
-  --accent:#7c5cff;        /* soft purple */
-  --accent2:#32c6c6;       /* mint */
+  --accent:#7c5cff;
+  --accent2:#32c6c6;
   --text:#1f2430;
   --muted:#5b6170;
-  --card: rgba(255,255,255,0.72);
+  --card: rgba(255,255,255,0.75);
   --bg1:#f7f3ff;
   --bg2:#eefcff;
   --bg3:#fff6ef;
+  --maxw:1000px;
+  font-family: Inter, Helvetica, Arial, sans-serif;
 }
 
-/* dreamy gradient + cloud blobs */
+*{box-sizing:border-box}
+
 body{
-  color: var(--text);
+  margin:0;
+  color:var(--text);
+  line-height:1.5;
   background:
     radial-gradient(700px 300px at 10% 12%, rgba(124,92,255,0.18), transparent 55%),
     radial-gradient(700px 300px at 85% 18%, rgba(50,198,198,0.18), transparent 55%),
-    radial-gradient(800px 340px at 40% 0%, rgba(255,190,140,0.16), transparent 60%),
     linear-gradient(180deg, var(--bg1), var(--bg2) 55%, var(--bg3));
 }
 
-/* subtle cloud layer */
-body::before{
-  content:"";
-  position: fixed;
-  inset: 0;
-  pointer-events:none;
-  opacity: 0.55;
-  background:
-    radial-gradient(160px 90px at 12% 22%, rgba(255,255,255,0.70), transparent 62%),
-    radial-gradient(220px 110px at 28% 18%, rgba(255,255,255,0.55), transparent 65%),
-    radial-gradient(240px 120px at 75% 16%, rgba(255,255,255,0.62), transparent 66%),
-    radial-gradient(180px 100px at 86% 26%, rgba(255,255,255,0.52), transparent 66%),
-    radial-gradient(260px 130px at 45% 30%, rgba(255,255,255,0.45), transparent 68%);
-  filter: blur(2px);
-  mix-blend-mode: soft-light;
-  z-index: 0;
-}
+.wrap{max-width:var(--maxw);margin:40px auto;padding:28px}
 
-.wrap{ position: relative; z-index: 1; }
-
-/* glassy cards */
-section.card{
-  background: var(--card);
-  border: 1px solid rgba(255,255,255,0.55);
-  box-shadow: 0 10px 30px rgba(20,20,30,0.08);
-  backdrop-filter: blur(10px);
-}
-
-/* nicer header */
 header{
-  padding: 18px 18px;
-  border-radius: 14px;
+  display:flex;
+  gap:24px;
+  align-items:center;
 }
 
-/* buttons look more agency */
+.profile-pic{
+  width:120px;
+  height:120px;
+  border-radius:50%;
+  object-fit:cover;
+  border:4px solid rgba(255,255,255,0.6);
+  box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+h1{margin:0;font-size:30px}
+
+.lead{color:var(--muted);margin-top:8px}
+
 .btn{
-  background: linear-gradient(135deg, rgba(124,92,255,0.95), rgba(50,198,198,0.92));
-  color: white;
-  border: 1px solid rgba(255,255,255,0.25);
-  box-shadow: 0 10px 22px rgba(124,92,255,0.18);
-}
-.btn:hover{ transform: translateY(-1px); }
-.btn{ transition: transform 0.15s ease, box-shadow 0.2s ease; }
-
-/* links */
-.download, .contact a{
-  color: var(--accent);
+  display:inline-block;
+  padding:10px 16px;
+  border-radius:12px;
+  text-decoration:none;
+  color:white;
+  background:linear-gradient(135deg,var(--accent),var(--accent2));
+  font-weight:600;
+  margin-right:8px;
+  margin-top:10px;
 }
 
-/* project items more playful but clean */
+main{
+  display:grid;
+  grid-template-columns:1fr 320px;
+  gap:30px;
+  margin-top:40px;
+}
+
+@media(max-width:900px){
+  main{grid-template-columns:1fr}
+}
+
+.card{
+  background:var(--card);
+  padding:20px;
+  border-radius:16px;
+  backdrop-filter:blur(10px);
+  box-shadow:0 15px 40px rgba(0,0,0,0.08);
+}
+
 .projects .item{
-  border-left: 4px solid transparent;
-  border-image: linear-gradient(180deg, rgba(124,92,255,0.9), rgba(50,198,198,0.9)) 1;
-  background: rgba(255,255,255,0.50);
-  border-radius: 12px;
+  background:rgba(255,255,255,0.5);
+  padding:15px;
+  border-radius:14px;
+  margin-bottom:18px;
 }
 
-/* chips */
-.chip{
-  background: rgba(255,255,255,0.65);
-  border: 1px solid rgba(124,92,255,0.15);
-}
+.project-title{font-weight:700;margin-bottom:6px}
 
-/* gallery polish */
+.meta{font-size:13px;color:var(--muted)}
+
 .work-gallery{
   display:flex;
   flex-wrap:wrap;
   gap:14px;
-  margin:14px 0 6px;
+  margin:14px 0;
 }
+
 .work-gallery img{
   width:100%;
-  max-width: 290px;
-  border-radius: 14px;
-  border: 1px solid rgba(255,255,255,0.6);
-  box-shadow: 0 12px 28px rgba(20,20,30,0.12);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  max-width:300px;
+  border-radius:14px;
+  box-shadow:0 15px 35px rgba(0,0,0,0.15);
+  transition:0.3s;
 }
+
 .work-gallery img:hover{
-  transform: translateY(-4px) rotate(-0.3deg);
-  box-shadow: 0 16px 34px rgba(20,20,30,0.16);
+  transform:translateY(-6px);
 }
-  </style>
+
+.chip{
+  background:white;
+  padding:6px 10px;
+  border-radius:20px;
+  font-size:13px;
+  margin-right:6px;
+}
+
+a.inline-link{
+  color:var(--accent);
+  font-weight:600;
+  text-decoration:none;
+}
+</style>
 </head>
+
 <body>
-  <div class="wrap">
-    <header>
-      <div class="hero">
-        <div>
-          <h1>Brayden Abadilla</h1>
-          <p class="small" style="margin:10px 0 0;">
-  Creative marketing + content design — pastel-forward visuals, photography, and campaign strategy.
+<div class="wrap">
+
+<header>
+  <!-- 👉 Replace profile.jpg with your photo filename -->
+  <img src="profile.jpg" alt="Brayden Abadilla" class="profile-pic">
+
+  <div>
+    <h1>Brayden Abadilla</h1>
+    <p class="lead">
+      Creative marketing & content strategy — photography, branding, and campaign execution.
+      $1,000 entrepreneurship pitch winner.
+    </p>
+    <a class="btn" href="#projects">View Work</a>
+    <a class="btn" href="mailto:braydenjesiah2006@gmail.com">Email Me</a>
+  </div>
+</header>
+
+<main>
+
+<div>
+<section class="card" id="projects">
+<h2>Selected Projects</h2>
+
+<div class="projects">
+
+<article class="item">
+<div class="meta">Vivot Craft Cafe — Marketing & Photography</div>
+<h3 class="project-title">Seasonal Campaign Content</h3>
+<p>
+Photographed and edited new seasonal items for
+<a class="inline-link" href="https://www.instagram.com/vivot.craftcafe/" target="_blank">Vivot Craft Cafe Instagram</a>,
+creating promotional visuals aligned with brand identity.
 </p>
-          <p class="lead">Marketing student at CSULB — social media, campaign strategy, and creative analytics. <strong>$1,000 entrepreneurship pitch winner.</strong></p>
-          <div class="cta">
-            <a class="btn" href="#projects">View work</a>
-            <a class="btn" href="mailto:braydenjesiah2006@gmail.com">Email me</a>
-            <a class="download" href="Brayden_Abadilla_Resume.pdf" download>Download resume (PDF)</a>
-          </div>
-        </div>
-      </div>
-    </header>
 
-    <main>
-      <div>
-        <section class="card" id="projects">
-          <h2>Selected Projects</h2>
+<div class="work-gallery">
+<img src="avotoastvivot2.png">
+<img src="eggsandovivot.png">
+<img src="fruithojivivot.png">
+</div>
 
-          <div class="projects">
-            <article class="item">
-              <div class="meta small">Social Marketing Assistant — DirectMyLoan Inc. (Dec 2024 – Aug 2025)</div>
-              <h3 class="project-title">Lead generation + social content</h3>
-              <p><strong>Goal:</strong> Increase social engagement and capture qualified leads for loan products.</p>
-              <ul>
-                <li>Planned and published 3–5 weekly posts across Instagram & LinkedIn; implemented A/B copy tests.</li>
-                <li>Used Google Analytics and platform insights to iterate on content — improved engagement by <strong>32%</strong>.</li>
-                <li>Helped set up automation for lead capture that fed into HubSpot (or CRM) to qualify leads.</li>
-              </ul>
-              <div class="small tools">
-                <span class="chip">Google Analytics</span><span class="chip">Meta Business Suite</span><span class="chip">Canva</span>
-              </div>
-            </article>
+<div>
+<span class="chip">Adobe Photoshop</span>
+<span class="chip">Product Photography</span>
+<span class="chip">Social Marketing</span>
+</div>
+</article>
 
-            <article class="item">
-              <div class="meta small">Barista & in-store marketing — Vivot Craft Cafe (Aug 2025 – Present)</div>
-              <h3 class="project-title">Customer-facing promotions & in-store campaigns</h3>
-              <p><strong>Highlights:</strong> Photographing new seasonal items and creating promotional content using Adobe Photoshop to support upcoming marketing campaigns and social media engagement.</p>
-               <div class="work-gallery">
-   <img src="avotoastvivot2.png" alt="Avocado Toast Campaign">
-<img src="eggsandovivot.png" alt="Egg Sando Campaign">
-<img src="fruithojivivot.png" alt="Hojicha Latte Campaign">
-  </div>
-              <div class="small tools">
-                <span class="chip">Customer Service</span><span class="chip">In-store marketing</span>
-              </div>
-            </article>
+<article class="item">
+<div class="meta">CSULB AACF — Campus Outreach</div>
+<h3 class="project-title">Event Promotion & Social Strategy</h3>
+<p>
+Created graphics and social media content for
+<a class="inline-link" href="https://www.instagram.com/aacflb/" target="_blank">AACF Instagram</a>,
+increasing campus engagement and event signups.
+</p>
 
-            <article class="item">
-              <div class="meta small">Campus outreach — CSULB AACF (Aug 2025 – Present)</div>
-              <h3 class="project-title">Event promotion & social outreach</h3>
-              <p>Created event graphics and social posts that increased event signups and on-campus engagement.</p>
-              <div class="small tools">
-                <span class="chip">Adobe</span><span class="chip">Social Management</span>
-              </div>
-            </article>
+<div>
+<span class="chip">Graphic Design</span>
+<span class="chip">Social Media Strategy</span>
+<span class="chip">Community Marketing</span>
+</div>
+</article>
 
-          </div>
-      <aside>
-        <section class="card">
-          <h3>About</h3>
-          <p class="small">Business Marketing student at California State University, Long Beach. Passionate about creative campaigns and data-driven strategy. Winner — Apostle Business Ideation Challenge ($1,000).</p>
-          <div style="margin-top:10px">
-            <strong>Contact</strong>
-            <div class="small contact" style="margin-top:6px">
-              <div>Email: <a href="mailto:braydenjesiah2006@gmail.com">braydenjesiah2006@gmail.com</a></div>
-              <div>Location: Garden Grove, CA</div>
-            </div>
-          </div>
-        </section>
+</div>
+</section>
+</div>
 
-        <section class="card" style="margin-top:16px">
-          <h3>Skills & Tools</h3>
-          <ul class="skills small">
-            <li>Google Analytics • Campaign Reporting</li>
-            <li>Meta Business Suite • Instagram growth</li>
-            <li>Canva • Adobe Photoshop</li>
-            <li>HubSpot / CRM / Automations</li>
-            <li>Microsoft Excel (pivot tables)</li>
-          </ul>
-        </section>
+<aside>
+<section class="card">
+<h3>About</h3>
+<p>
+Business Marketing student at California State University, Long Beach.
+Passionate about creative campaigns and data-driven strategy.
+</p>
+</section>
+</aside>
 
-        <section class="card" style="margin-top:16px">
-          <h3>Resume & Achievements</h3>
-          <div class="small">
-            <a href="/Brayden_Abadilla_Resume.pdf" class="download">Download resume (PDF)</a>
-            <ul style="margin-top:8px">
-              <li>1st Place — Apostle Business Ideation Challenge ($1,000)</li>
-              <li>Dean's List (Norco College)</li>
-            </ul>
-          </div>
-        </section>
-      </aside>
-    </main>
+</main>
 
-    <footer>
-      <p>Built by Brayden • Want a copy of this template or help hosting? Email me.</p>
-    </footer>
-  </div>
+</div>
 </body>
 </html>
