@@ -6,7 +6,59 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Brayden Abadilla — Marketing Portfolio</title>
   <meta name="description" content="Brayden Abadilla — Marketing student at CSULB. Social media, campaign strategy, and entrepreneurship.">
-  /* ---- Pastel "in the clouds" creative-agency theme ---- */
+
+  <style>
+    :root{
+      --accent:#f5c542;
+      --text:#222;
+      --muted:#555;
+      --card:#fff;
+      --bg:#f8f8f9;
+      --maxw:1000px;
+      font-family:Inter,Helvetica,Arial,sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);line-height:1.5}
+    .wrap{max-width:var(--maxw);margin:36px auto;padding:28px}
+    header{display:flex;gap:24px;align-items:center;justify-content:space-between}
+    .hero{display:flex;gap:28px;align-items:center}
+    .avatar{width:96px;height:96px;border-radius:8px;background:#ddd;flex-shrink:0}
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    .cta{margin-top:14px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;color:#111;background:var(--accent);font-weight:600;margin-right:8px}
+    main{display:grid;grid-template-columns:1fr 320px;gap:28px;margin-top:28px}
+    @media(max-width:900px){main{grid-template-columns:1fr}}
+    section.card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(20,20,30,0.04)}
+    .projects .item{border-left:4px solid var(--accent);padding:12px;margin-bottom:14px}
+    .meta{color:var(--muted);font-size:13px;margin-bottom:8px}
+    .skills li{margin-bottom:6px}
+    footer{margin-top:30px;color:var(--muted);font-size:13px;text-align:center}
+    .tools{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:#f1f1f3;padding:6px 8px;border-radius:999px;font-size:13px}
+    .download{display:block;margin-top:8px;color:var(--accent);text-decoration:none;font-weight:600}
+    .project-title{font-weight:700;margin:0 0 6px}
+    .small{font-size:13px;color:var(--muted)}
+    .contact a{color:var(--accent);text-decoration:none;font-weight:600}
+    .work-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 14px 0;
+}
+
+.work-gallery img {
+  width: 100%;
+  max-width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+}
+
+.work-gallery img:hover {
+  transform: scale(1.03);
+}
+      /* ---- Pastel "in the clouds" creative-agency theme ---- */
 
 :root{
   --accent:#7c5cff;        /* soft purple */
@@ -111,57 +163,6 @@ header{
   transform: translateY(-4px) rotate(-0.3deg);
   box-shadow: 0 16px 34px rgba(20,20,30,0.16);
 }
-  <style>
-    :root{
-      --accent:#f5c542;
-      --text:#222;
-      --muted:#555;
-      --card:#fff;
-      --bg:#f8f8f9;
-      --maxw:1000px;
-      font-family:Inter,Helvetica,Arial,sans-serif;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:var(--text);line-height:1.5}
-    .wrap{max-width:var(--maxw);margin:36px auto;padding:28px}
-    header{display:flex;gap:24px;align-items:center;justify-content:space-between}
-    .hero{display:flex;gap:28px;align-items:center}
-    .avatar{width:96px;height:96px;border-radius:8px;background:#ddd;flex-shrink:0}
-    h1{margin:0;font-size:28px}
-    p.lead{margin:6px 0 0;color:var(--muted)}
-    .cta{margin-top:14px}
-    .btn{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;color:#111;background:var(--accent);font-weight:600;margin-right:8px}
-    main{display:grid;grid-template-columns:1fr 320px;gap:28px;margin-top:28px}
-    @media(max-width:900px){main{grid-template-columns:1fr}}
-    section.card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(20,20,30,0.04)}
-    .projects .item{border-left:4px solid var(--accent);padding:12px;margin-bottom:14px}
-    .meta{color:var(--muted);font-size:13px;margin-bottom:8px}
-    .skills li{margin-bottom:6px}
-    footer{margin-top:30px;color:var(--muted);font-size:13px;text-align:center}
-    .tools{display:flex;flex-wrap:wrap;gap:8px}
-    .chip{background:#f1f1f3;padding:6px 8px;border-radius:999px;font-size:13px}
-    .download{display:block;margin-top:8px;color:var(--accent);text-decoration:none;font-weight:600}
-    .project-title{font-weight:700;margin:0 0 6px}
-    .small{font-size:13px;color:var(--muted)}
-    .contact a{color:var(--accent);text-decoration:none;font-weight:600}
-    .work-gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin: 14px 0;
-}
-
-.work-gallery img {
-  width: 100%;
-  max-width: 280px;
-  border-radius: 10px;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-  transition: transform 0.3s ease;
-}
-
-.work-gallery img:hover {
-  transform: scale(1.03);
-}
   </style>
 </head>
 <body>
@@ -170,6 +171,9 @@ header{
       <div class="hero">
         <div>
           <h1>Brayden Abadilla</h1>
+          <p class="small" style="margin:10px 0 0;">
+  Creative marketing + content design — pastel-forward visuals, photography, and campaign strategy.
+</p>
           <p class="lead">Marketing student at CSULB — social media, campaign strategy, and creative analytics. <strong>$1,000 entrepreneurship pitch winner.</strong></p>
           <div class="cta">
             <a class="btn" href="#projects">View work</a>
